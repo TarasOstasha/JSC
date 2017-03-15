@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson1</title>
+</head>
+<body>
+	<script>
+
+var data = [10,11,12,13,14,15,16,17,18,19,20];
+var result = new Array();
+var squaredArray = function(index) {
+    if (index >= 0) {
+        result.push(data[index] * data[index])
+        return squaredArray(index- 1);
+    } else {
+        return result;
+    }
+};
+squaredArray(data.length-1);
+
+var data = [10,11,12,13,14,15,16,17,18,19,20];
+data.map(function(element){return element +2});
+
+
+
+	</script>
+</body>
+</html>
